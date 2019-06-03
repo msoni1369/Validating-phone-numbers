@@ -1,0 +1,26 @@
+n=int(input())
+p=[]
+for i in range(n):
+    x=(input())
+    p.append(x)
+    #list1=map(int, str(x))
+    list1=list(str(x))
+    if(len(list1)==10):
+        
+        if(list1[0]== '7' or list1[0]=='8' or list1[0]=='9'):
+            
+            if(list1[1]== 'F' ):
+                print("NO")
+            elif(list1[1]=='Y'):
+                print("NO")
+            elif(list1[4]=='F'):
+                print("NO")
+            elif(list1[7]=='F'):
+                print("NO")
+           
+            else:
+                print("YES")
+        else:
+            print("NO")
+    else:
+        print("NO")
